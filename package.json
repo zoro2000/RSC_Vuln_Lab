@@ -1,0 +1,14 @@
+{
+  "name": "rsc-report-poc",
+  "version": "1.0.0",
+  "description": "Vulnerable RSC report generator lab (React 19.2.0, CVE-2025-55182)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --conditions react-server --conditions webpack server.js"
+  },
+  "dependencies": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-server-dom-webpack": "19.2.0"
+  }
+}
